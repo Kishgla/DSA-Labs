@@ -34,11 +34,11 @@ NOTE: If the unit test is not on, that code will not be compiled!
 */
 
 // Main toggle
-#define LAB_2	0
+#define LAB_2	1
 
 // Individual unit test toggles
 #define LAB2_PALINDROME_NUMBER		0
-#define LAB2_FILL_FILE				0
+#define LAB2_FILL_FILE				1
 #define LAB2_FILL_ARRAY				0
 #define LAB2_CLEAR					0
 #define LAB2_SORT_ASCENDING			0
@@ -64,8 +64,15 @@ NOTE: If the unit test is not on, that code will not be compiled!
 //
 // Return: True, if the number is a palindrome number
 inline bool IsPalindromeNumber(unsigned int _num) {
-	// TODO: Implement this function	
-	
+	bool isPal = true;
+	std::string num = std::to_string(_num);
+	for (size_t i = 0; i < num.length()/2; i++) {
+		if (num[i] != num[num.length() - 1 - i]) {
+			isPal = false;
+			break;
+		}
+	}
+	return isPal;
 }
 
 class DSA_Lab2
@@ -85,7 +92,19 @@ public:
 	// In:	_input		Name of the file to open
 	void Fill(const char* _input) {
 		// TODO: Implement this method
+		std::ifstream fin(_input, std::ios::in | std::ios::binary);
+		size_t current;
+		size_t size;
+		fin >> size;
 
+		std::cout << size;
+
+		for (size_t i = 0; i < size; i++) {
+			fin >> current;
+			mValues.push_back(current);
+		}
+
+		fin.close();
 	}
 
 	// Fill out the mValues vector with the contents of an array

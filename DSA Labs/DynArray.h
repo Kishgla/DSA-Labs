@@ -33,24 +33,24 @@ NOTE: If the unit test is not on, that code will not be compiled!
 */
 
 // Main toggle
-#define LAB_1	1
+#define LAB_1	0
 
 // Individual unit test toggles
-#define LAB1_DEFAULT_CONSTRUCTOR_NO_ARGS			1
-#define LAB1_DEFAULT_CONSTRUCTOR_WITH_ARGS			1
-#define LAB1_BRACKET_OPERATOR						1
-#define LAB1_SIZE_ACCESSOR							1
-#define LAB1_CAPACITY_ACCESSOR						1
-#define LAB1_RESERVE_EMPTY							1
-#define LAB1_RESERVE_DOUBLE_CAPACITY				1
-#define LAB1_RESERVE_LARGER_CAPACITY				1
-#define LAB1_RESERVE_SMALLER_CAPACITY				1
-#define LAB1_APPEND_NO_RESIZE						1
-#define LAB1_APPEND_RESIZE							1
-#define LAB1_CLEAR									1
-#define LAB1_DESTRUCTOR								1
-#define LAB1_ASSIGNMENT_OPERATOR					1
-#define LAB1_COPY_CONSTRUCTOR						1
+#define LAB1_DEFAULT_CONSTRUCTOR_NO_ARGS			0
+#define LAB1_DEFAULT_CONSTRUCTOR_WITH_ARGS			0
+#define LAB1_BRACKET_OPERATOR						0
+#define LAB1_SIZE_ACCESSOR							0
+#define LAB1_CAPACITY_ACCESSOR						0
+#define LAB1_RESERVE_EMPTY							0
+#define LAB1_RESERVE_DOUBLE_CAPACITY				0
+#define LAB1_RESERVE_LARGER_CAPACITY				0
+#define LAB1_RESERVE_SMALLER_CAPACITY				0
+#define LAB1_APPEND_NO_RESIZE						0
+#define LAB1_APPEND_RESIZE							0
+#define LAB1_CLEAR									0
+#define LAB1_DESTRUCTOR								0
+#define LAB1_ASSIGNMENT_OPERATOR					0
+#define LAB1_COPY_CONSTRUCTOR						0
 
 // Our implementation of a vector (simplified)
 template<typename Type>
