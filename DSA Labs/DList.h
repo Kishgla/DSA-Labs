@@ -34,7 +34,7 @@ NOTE: If the unit test is not on, that code will not be compiled!
 
 
 // Main toggle
-#define LAB_3	0
+#define LAB_3	1
 
 // Individual unit test toggles
 #define LAB3_CTOR						0
