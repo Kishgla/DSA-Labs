@@ -24,7 +24,7 @@ Notes:			Property of Full Sail University
 #define FAIL	1
 
 struct FailResult {
-	bool check;
+	bool check = NULL;
 	std::string msg;
 };
 

@@ -38,7 +38,7 @@ NOTE: If the unit test is not on, that code will not be compiled!
 
 // Individual unit test toggles
 #define LAB2_PALINDROME_NUMBER		0
-#define LAB2_FILL_FILE				1
+#define LAB2_FILL_FILE				0
 #define LAB2_FILL_ARRAY				0
 #define LAB2_CLEAR					0
 #define LAB2_SORT_ASCENDING			0
@@ -101,7 +101,7 @@ public:
 
 		for (size_t i = 0; i < size; i++) {
 			fin >> current;
-			mValues.push_back(current);
+			//mValues.push_back(current);
 		}
 
 		fin.close();
